@@ -24,18 +24,18 @@ namespace ApiRepository.Controllers
         //}
 
             [Dependency]
-            public IRepositorio<Alumno, ViewModelAlumno> repo { get; set; }
+            public IRepositorio<Alumno, ViewModelAlumno> Repo { get; set; }
 
         public ICollection<ViewModelAlumno> Get()
         {
-            return repo.Get();
+            return Repo.Get();
         }
 
         [ResponseType(typeof (ViewModelAlumno))]
 
         public IHttpActionResult Get(int id)
         {
-            var data = repo.Get(id);
+            var data = Repo.Get(id);
             if (data == null)
                 return NotFound();
 

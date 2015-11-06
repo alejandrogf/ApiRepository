@@ -22,7 +22,7 @@ namespace Repositorio.ViewModel
         {
             var nuevoCurso = new Curso()
             {
-                idCurso =  idCurso,
+                //idCurso =  idCurso,
                 Nombre =   Nombre,
                 Duracion = Duracion,
                 Inicio =   Inicio,
